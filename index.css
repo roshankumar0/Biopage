@@ -10,6 +10,12 @@ body{
     
     
 }
+
+.wrapper{
+    background-color: darkorange;
+    width: 70%;
+    margin: 0 auto;
+}
 .logo{
     font-size: 40px;
 }
@@ -19,16 +25,45 @@ header{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    
 }
 header nav ul{
     display: flex;
+   
     
 }
 header nav ul li{
-    font-size: 30px;
+    font-size: 20px;
+    
+}
+header nav ul li a{
+color: azure;
+}
+nav ul button{
+    padding: 10px 15px;
+    background-color: brown;
+    color: whitesmoke;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
 }
 span{
     color: orangered;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+main .left{
+    background-color: orangered;
+    border-radius: 20%;
+}
+main .left img{
+    border-radius: 50%;
+    font-weight: 400;
 }
 
 h1{
@@ -49,24 +84,28 @@ a{
     transition: all 0.3s;
 }
 @media only screen and (max-width: 576px) {
-    .wrapper{
-        
-    }
+  
     nav{
         display: none;
     }
     header .logo{
         text-align: center;
-        font-size: 30px;
+        
         
     }
    h3{
        text-align: center;
    }
+   
     main .left img{
         width: 100%;
     }
     nav button{
        display: none;
     }
+  }
+  @media only screen and (max-width: 1020px){
+      nav button {
+          display: none;
+      }
   }
