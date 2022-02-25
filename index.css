@@ -7,35 +7,30 @@ body{
     font-family: 'Roboto', sans-serif;
     color: black;
     font-weight: 400;
-    background-color: grey;
+    
+    
 }
-.col .log{
-    font-size: 30px;
+.logo{
+    font-size: 40px;
 }
-.col2{
+header{
+    background-color: chartreuse;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
     align-items: center;
 }
-.col i{
-    margin-right: 10px;
-    padding: 5px;
-    transition: all 0.3s;
+header nav ul{
+    display: flex;
     
 }
-.col i:Hover{
-    background-color: orange;
-    border-radius: 50%;
-    color: skyblue;
-   
+header nav ul li{
+    font-size: 30px;
 }
-.row1{
-   
-    position: sticky;
-    top: 0;
-    z-index: 11;
-    
+span{
+    color: orangered;
 }
+
 h1{
     text-align: center;
 }
@@ -51,33 +46,27 @@ li{
 a{
     text-decoration: none;
     padding: 0 10px;
-    color: white;
     transition: all 0.3s;
 }
-.container{
-    height: 100%;
-    width: 50vw;
-}
-.rounded {
-    border-radius: 7.25rem!important;
-    margin: 50px;
-}
-.info span{
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-}
-@media only screen and (max-width: 780px) {
-     .col img{
-         width: 100px;
-     }
-     .col3{
-         display: flex;
-         flex-direction: column;
-     }
-     .info span{
-         font-size: 20px;
-     }
+@media only screen and (max-width: 576px) {
+    .wrapper{
+        
+    }
+    nav{
+        display: none;
+    }
+    header .logo{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+   h3{
+       text-align: center;
+   }
+    main .left img{
+        width: 100%;
+    }
+    nav button{
+       display: none;
+    }
   }
