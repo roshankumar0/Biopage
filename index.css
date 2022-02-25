@@ -20,11 +20,15 @@ body{
     font-size: 40px;
 }
 header{
-    background-color: rgba(128, 255, 0, 0);
+    background-color: rgb(236, 140, 24);
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    text-align: center;
+    position:sticky;
+    top:0px;
+    
     
 }
 header nav ul{
@@ -37,12 +41,11 @@ header nav ul li{
     
 }
 header nav ul li a{
-color: azure;
+color: rgb(0, 0, 0);
 }
 nav ul button{
-    padding: 10px 15px;
-    background-color: brown;
-    color: whitesmoke;
+    padding: 10px 10px;
+    background-color: rgb(141, 45, 0);
     border-radius: 4px;
     outline: none;
     cursor: pointer;
@@ -56,10 +59,6 @@ main{
     align-items: center;
     justify-content: space-around;
     padding-top: 20px;
-}
-main .left{
-    background-color: orangered;
-    border-radius: 20%;
 }
 main .left img{
     border-radius: 50%;
@@ -120,5 +119,11 @@ a{
   @media only screen and (max-width: 1020px){
       nav button {
           display: none;
+      }
+      nav ul li a{
+          font-size: 18px;
+      }
+      .logo{
+          font-size: 20px;
       }
   }
