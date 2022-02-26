@@ -3,127 +3,158 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-weight: 400;
-    
-    
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 15px;
+  height: 50px;
+  z-index: 10;
+  padding: 10px;
+  background-color: red;
+  line-height: 10px;
+}
+#menutoggle {
+  display: none;
+  position: absolute;
+}
+nav {
+  display: none;
 }
 
-.wrapper{
-    background-color: darkorange;
-    width: 70%;
-    margin: 0 auto;
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(226, 191, 149);
 }
-.logo{
-    font-size: 40px;
+.logo {
+  font-size: 40px;
 }
-header{
-    background-color: rgb(236, 140, 24);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    position:sticky;
-    top:0px;
-    
-    
+header {
+  background-color: rgb(255, 198, 128);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 0px;
 }
-header nav ul{
-    display: flex;
-   
-    
+header nav ul {
+  display: flex;
 }
-header nav ul li{
-    font-size: 20px;
-    
+header nav ul li {
+  font-size: 20px;
 }
-header nav ul li a{
-color: rgb(0, 0, 0);
+header nav ul li a {
+  color: rgb(0, 0, 0);
 }
-nav ul button{
-    padding: 10px 10px;
-    background-color: rgb(141, 45, 0);
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
+span {
+  color: orangered;
 }
-span{
-    color: orangered;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
 }
-main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 20px;
-}
-main .left img{
-    border-radius: 50%;
-    font-weight: 400;
+main .left img {
+  border-radius: 50%;
+  font-weight: 400;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-p{
-    padding: 0 20px;
-    font-family: 'Poppins', sans-serif;
-
-    
+p {
+  padding: 0 20px;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    padding: 0 10px;
-    transition: all 0.3s;
+a {
+  text-decoration: none;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+.social {
+  display: flex;
+  background-color: rgb(255, 198, 128);
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+.social i {
+  margin: 20px;
+  padding: 5px;
+  transition: all ease 0.3s;
+}
+.social i:hover {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: red;
 }
 @media only screen and (max-width: 576px) {
-    .wrapper{
-        width: 100%;
-    }
-  
-    nav{
-        display: none;
-    }
-    header .logo{
-        text-align: center;
-        
-        
-    }
-   h3{
-       text-align: center;
-   }
-   
-    main .left img{
-        width: 100%;
-    }
-    nav button{
-       display: none;
-    }
+  .wrapper {
+    width: 100%;
   }
-  .social i{
-      padding: 20px;
-      cursor: pointer;
+  #menutoggle {
+    display: block;
+    cursor: pointer;
   }
-  .social{
-      height: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .logo {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
   }
-  @media only screen and (max-width: 1020px){
-      nav button {
-          display: none;
-      }
-      nav ul li a{
-          font-size: 18px;
-      }
-      .logo{
-          font-size: 20px;
-      }
+  nav ul li a {
+    font-size: 14px;
+    padding: 0 3px;
   }
+  header {
+    display: block;
+  }
+  nav {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 20vh;
+  }
+  ul {
+    width: 100%;
+    height: 22vh;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s;
+    transition: all 0.5s ease;
+  }
+  #menutoggle:checked ~ ul {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  .wrapper {
+    width: 80%;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  nav {
+    display: block;
+  }
+  a {
+    padding: 4px;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 578px) {
+  a {
+    font-size: 20px;
+  }
+}
