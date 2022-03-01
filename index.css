@@ -8,22 +8,14 @@ body {
   color: black;
   font-weight: 400;
 }
-.menu {
-  display: flex;
-  flex-direction: column;
-  width: 15px;
-  height: 50px;
-  z-index: 10;
-  padding: 10px;
-  background-color: red;
-  line-height: 10px;
-}
+
 #menutoggle {
+  font-size: 20px;
+  color: whitesmoke;
   display: none;
   position: absolute;
-}
-nav {
-  display: none;
+  top: 20px;
+  left: 20px;
 }
 
 .wrapper {
@@ -99,6 +91,9 @@ a {
   background-color: red;
 }
 @media only screen and (max-width: 576px) {
+  .mobile__hidden {
+    display: none;
+  }
   .wrapper {
     width: 100%;
   }
@@ -133,9 +128,6 @@ a {
     transition: all 0.5s;
     transition: all 0.5s ease;
   }
-  #menutoggle:checked ~ ul {
-    transform: translateY(0px);
-  }
 }
 
 @media only screen and (min-width: 577px) {
@@ -144,6 +136,9 @@ a {
   }
   .logo {
     font-size: 28px;
+  }
+  ul {
+    display: block;
   }
   nav {
     display: block;

@@ -12,21 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/9ffaf5ca5c.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="logo">
-          <label id="menutoggle"> <i class="fas fa-bars"></i> </label
-          ><span>Bio</span>graphy
-        </div>
-        <nav>
+        <label id="menutoggle"> <i class="fas fa-bars"></i> </label>
+        <div class="logo"><span>Bio</span>graphy</div>
+        <nav class="mobile__hidden" id="navigation">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Pages</a></li>
@@ -85,10 +84,11 @@
       </footer>
     </div>
     <script>
-      let toggle = document.querySelector("#");
-      let nav = document.querySelector("");
+      let toggle = document.querySelector("#menutoggle");
+      let navigation2 = document.querySelector("#navigation");
       toggle.addEventListener("click", () => {
-        toggle.document("");
+        navigation2.classList.toggle("mobile__hidden");
+        navigation2.classList.toggle("abc");
       });
     </script>
   </body>
