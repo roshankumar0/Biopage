@@ -56,7 +56,6 @@ main {
 }
 main .left img {
   border-radius: 50%;
-  font-weight: 400;
 }
 
 h1 {
@@ -102,6 +101,26 @@ a {
   }
   .wrapper {
     width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+  .left img {
+    width: 250px;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+  .right h3 {
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  .content {
+    margin-top: 50px;
+  }
+  .content p {
+    margin: 30px 0;
+    text-align: justify;
   }
   #menutoggle {
     display: block;
